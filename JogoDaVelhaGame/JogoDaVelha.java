@@ -40,6 +40,7 @@ public class JogoDaVelha extends JFrame {
 		SettingUpComponents();
 		SwingUtilities.updateComponentTreeUI(this);
 	}
+	//Organizando os java components
 	private void SettingUpComponents() {
 		
 		GridBagConstraints gbc2 = new GridBagConstraints();
@@ -97,7 +98,7 @@ public class JogoDaVelha extends JFrame {
 		}else if(velhamap[2][0] == velhamap[1][1] && velhamap[1][1] == velhamap[0][2]) {
 			return true;
 		}else {
-			//Verifica se todos os botıes foram preenchidos mas n„o houve nenhuma ocorrencia de vitoria
+			//Verifica se todos os bot√µes foram preenchidos mas n√£o houve nenhuma ocorrencia de vitoria
 			if((velhamap[0][0] == 'x' || 
 					velhamap[0][0] == 'o' )&&
 					(velhamap[0][1] == 'x' || 
@@ -136,7 +137,7 @@ public class JogoDaVelha extends JFrame {
 			ex.printStackTrace();
 		}
 	}
-	//Define o design da AplicaÁ„o
+	//Define o design da Aplica√ß√£o
 	private void Design() {
 		setTitle("Jogo Da Velha");
 		setSize(600, 600);
@@ -200,7 +201,7 @@ public class JogoDaVelha extends JFrame {
 		}
 		reniciar.setVisible(false);
 	}
-	//Eventos dos botıes
+	//Eventos dos bot√µes
 	private void ButtonEvents() {
 		buttons[0].addActionListener(new ActionListener() {
 			
