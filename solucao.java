@@ -1,4 +1,4 @@
-package com.judge;
+
 import java.util.Scanner;
 public class solucao {
 	public static void main(String[] args) {
